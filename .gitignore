@@ -1,0 +1,33 @@
+# Ambiente virtualenv creato da reticulate
+/.virtualenvs/
+
+# File di sistema Windows
+*.Rproj.user/
+*.Rhistory
+*.RData
+*.Ruserdata
+
+# File di log o cache
+__pycache__/
+*.pyc
+
+# Output di Python virtualenv
+*.egg-info/
+*.eggs/
+*.env/
+.env/
+venv/
+env/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# File temporanei
+.Rhistory
+.RData
+.Ruserdata
+
+# File specifici di RStudio
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
