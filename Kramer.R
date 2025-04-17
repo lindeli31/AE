@@ -59,3 +59,9 @@ points(recpca, pch = 16, col = 'red')
 points(reconstructed_data_nlpca, col = "steelblue", pch = 16)
 legend("topright", legend = c("Dati Originali", "Dati Ricostruiti pca", "Dati ricostruiti AE"
                               ), col = c("black", "red", "steelblue"), pch = 16)
+
+
+
+# coloro ------------------------------------------------------------------
+
+
