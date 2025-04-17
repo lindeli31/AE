@@ -22,7 +22,6 @@ model <- keras_model_sequential() %>%
 
 model %>% compile(optimizer = optimizer_adam(0.01), loss = 'mse')
 history <- model %>% fit(X, X, epochs = 1000, batch_size = 16, verbose = 0)
-
 # Estrai pesi
 W_encoder <- get_weights(model)[[1]]
 print(W_encoder)
