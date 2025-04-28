@@ -1,9 +1,10 @@
+rm(list=ls())
 library(tensorflow)
 library(keras)
 library(ggplot2)
 library(dplyr)
 set.seed(123)
-theta = runif(100, 0, 2*pi)
+theta = runif(500, 0, 2*pi)
 y1 = 0.8*sin(theta)
 y2 = 0.8*cos(theta)
 dati = data.frame(y1 = y1, y2 = y2)
@@ -53,9 +54,9 @@ model_nlpca %>% compile(
 history <- model_nlpca %>% fit(
   x = as.matrix(dati_scaled),
   y = as.matrix(dati_scaled),
-  epochs = 5000,  # Più epoche per convergenza
+  epochs = 2000,  # Più epoche per convergenza
   batch_size = 4, 
-  verbose = 1
+  verbose = 1, 
 )
 
 # Ricostruisco i dati e ri-scalo
