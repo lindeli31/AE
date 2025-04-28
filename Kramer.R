@@ -59,6 +59,7 @@ history <- model_nlpca %>% fit(
   verbose = 1, 
 )
 
+save_model_hdf5(model_nlpca, "KramerTanhNLPC.h5")
 # Ricostruisco i dati e ri-scalo
 recdata_nlpca <- predict(model_nlpca, as.matrix(dati_scaled)) * max_val
 E_nlpca<- mean((as.matrix(dati)-recdata_nlpca)^2)
