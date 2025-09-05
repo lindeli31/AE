@@ -29,7 +29,7 @@ This repository contains the R code for a small simulation study used in my BSc 
 ## File layout
 
 - `simulazione.R` — the entire study (single file)
-- Results are written to `risultati_simulazione3/` as `.RData` files (created automatically).
+- Results are written to `risultati_simulazione/` as `.RData` files (created automatically).
 
 ---
 
