@@ -68,7 +68,6 @@ where $f(Z)$ applies element-wise transformations like $z^3$ and $\exp(0.5z)$ to
 1. **Factor Correlation:** $\text{corr}(\hat{Z}, Z)^2$ averaged after optimal permutation and sign flips
 2. **Procrustes MSE:** $\|\hat{Z} - ZQ\|_F^2$ where $Q$ is the optimal orthogonal transformation
 
-All alignment-aware metrics use the Hungarian algorithm to find optimal factor correspondences.
 
 ---
 
